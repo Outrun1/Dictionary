@@ -362,6 +362,11 @@ public class EditProfileActivity extends AppCompatActivity {
         intent.setType("image/*");
         startActivityForResult(intent, REQUEST_CODE_CHOOSE);
     }
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
+        spf.edit().putBoolean("isLogin", false);
+    }
 
 }

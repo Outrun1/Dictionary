@@ -3,6 +3,7 @@ package com.example.userprofile23_1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -53,5 +54,11 @@ public class CollectActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
+        spf.edit().putBoolean("isLogin", false);
     }
 }

@@ -21,11 +21,14 @@ public class IndexActivity extends AppCompatActivity {
 
         SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
         boolean isLogin = spf.getBoolean("isLogin", false);
+        boolean isAutoLogin = spf.getBoolean("isAutoLogin", false);
 
-        if (isLogin) {
+        Intent intent = getIntent();
+        if (intent != null && intent.getStringExtra("account") != null)
+            who = intent.getStringExtra("account");
+        if (isLogin && isAutoLogin) {
             who = spf.getString("account", "未登录");
         }
-
         LinearLayout mine = findViewById(R.id.mine);
         mine.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +48,12 @@ public class IndexActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
+        spf.edit().putBoolean("isLogin", false);
     }
 }

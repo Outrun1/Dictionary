@@ -124,4 +124,10 @@ public class UserProfileActivity extends AppCompatActivity {
         startActivity(intent);
         this.finish();
     }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
+        spf.edit().putBoolean("isLogin", false);
+    }
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable-v24/btn_bg_selector.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable-v24/edit_text_bg.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable-v24/selector_bg_vd.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_baseline_home_gray_24.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_gray_slow_motion_video_24.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_green_person_24.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/setbar_bg.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_bottom.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_collect.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_edit_profile.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_index.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_register.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_translate.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_user_profilectivity.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/list_item.xml" value="0.25364583333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

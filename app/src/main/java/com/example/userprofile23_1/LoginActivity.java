@@ -152,6 +152,10 @@ public class LoginActivity extends AppCompatActivity {
 
         startActivityForResult(intent, REQUEST_CODE_REGISTER);
     }
+    public void toIndex(View view) {
+        Intent intent = new Intent(this, IndexActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

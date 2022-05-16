@@ -110,6 +110,14 @@
         android:onClick="toRegister"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="直接进入"
+        android:textColor="@color/colorPrimary"
+        android:onClick="toIndex" />
 
 
 </LinearLayout>

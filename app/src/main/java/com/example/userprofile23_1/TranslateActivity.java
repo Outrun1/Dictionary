@@ -6,12 +6,17 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.userprofile23_1.Translate.Translate;
 
 public class TranslateActivity extends AppCompatActivity {
     private String who = "未登录";
-
+    private EditText beforeTranslate;
+    private TextView afterTranslate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,11 +47,25 @@ public class TranslateActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        beforeTranslate = findViewById(R.id.before_translate);
+        afterTranslate = findViewById(R.id.after_translate);
     }
     @Override
     protected void onDestroy() {
         super.onDestroy();
         SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
         spf.edit().putBoolean("isLogin", false);
+    }
+
+    public void translate(View view) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String word = beforeTranslate.getText().toString();
+                String result = Translate.translate(word);
+                afterTranslate.setText(result);
+            }
+        }).start();
     }
 }

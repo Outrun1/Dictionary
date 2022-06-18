@@ -17,7 +17,6 @@ public class IndexActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
-        getSupportActionBar().setTitle("主页");
 
         SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
         boolean isLogin = spf.getBoolean("isLogin", false);

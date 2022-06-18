@@ -3,8 +3,8 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdk 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.example.userprofile23_1"
@@ -28,6 +28,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -36,4 +37,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    implementation 'com.alibaba:fastjson:2.0.2.android'
+
 }

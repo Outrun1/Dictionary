@@ -5,19 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".IndexActivity">
+    tools:context=".TranslateActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:gravity="center"
         android:layout_weight="1">
 
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </ProgressBar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            >
+            <EditText
+                android:id="@+id/before_translate"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:hint="before translate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="50dp"
+                style="@style/MyEditStyle"
+                />
+
+            <TextView
+                android:id="@+id/after_translate"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_vertical"
+                style="@style/MyEditStyle"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TRANSLATE"
+                android:layout_marginLeft="10dp"
+                android:onClick="translate"
+                />
+        </LinearLayout>
 
     </RelativeLayout>
     <include layout="@layout/activity_bottom"/>

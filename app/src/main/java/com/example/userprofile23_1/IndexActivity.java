@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.userprofile23_1.Translate.Translate;
+
 public class IndexActivity extends AppCompatActivity {
     private String who = "未登录";
 
@@ -54,5 +56,17 @@ public class IndexActivity extends AppCompatActivity {
         super.onDestroy();
         SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
         spf.edit().putBoolean("isLogin", false);
+    }
+
+    public void learn(View view) {
+        Intent intent = new Intent(IndexActivity.this, LearnActivity.class);
+        intent.putExtra("account", who);
+        startActivity(intent);
+    }
+
+    public void review(View view) {
+        Intent intent = new Intent(IndexActivity.this, ReviewActivity.class);
+        intent.putExtra("account", who);
+        startActivity(intent);
     }
 }

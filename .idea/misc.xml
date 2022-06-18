@@ -6,7 +6,11 @@
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable-v24/btn_bg_selector.xml" value="0.206" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable-v24/edit_text_bg.xml" value="0.206" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable-v24/selector_bg_vd.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable-v24/setbar_bg.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_baseline_arrow_back.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.206" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_baseline_home_gray_24.xml" value="0.206" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_baseline_home_green_24.xml" value="0.206" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_gray_slow_motion_video_24.xml" value="0.206" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_green_person_24.xml" value="0.206" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.206" />
@@ -15,9 +19,11 @@
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_collect.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_edit_profile.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_index.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_learn.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_register.xml" value="0.25364583333333335" />
+        <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_review.xml" value="0.2390625" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_translate.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/activity_user_profilectivity.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidWrokspace/temp/UserProfile23_1/app/src/main/res/layout/list_item.xml" value="0.25364583333333335" />

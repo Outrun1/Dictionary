@@ -34,29 +34,31 @@
             android:layout_marginTop="400dp">
 
             <TextView
+                android:id="@+id/learn"
                 android:layout_width="120dp"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="30dp"
-                android:textColor="@color/green_500"
                 android:background="@drawable/setbar_bg"
                 android:clickable="true"
                 android:gravity="center"
-                android:text="Learn"
-                android:textSize="20dp"
-                android:onClick="learn"></TextView>
+                android:onClick="learn"
+                android:text="Learn\n1000"
+                android:textColor="@color/green_500"
+                android:textSize="20dp"></TextView>
 
             <TextView
+                android:id="@+id/review"
                 android:layout_width="120dp"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="110dp"
                 android:layout_marginRight="30dp"
-                android:textColor="@color/green_500"
                 android:background="@drawable/setbar_bg"
                 android:clickable="true"
                 android:gravity="center"
-                android:text="Review"
-                android:textSize="20dp"
-                android:onClick="review"></TextView>
+                android:onClick="review"
+                android:text="Review\n1000"
+                android:textColor="@color/green_500"
+                android:textSize="20dp"></TextView>
         </LinearLayout>
 
     </RelativeLayout>

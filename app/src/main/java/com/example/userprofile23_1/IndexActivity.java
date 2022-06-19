@@ -8,18 +8,19 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.userprofile23_1.Translate.Translate;
 
 public class IndexActivity extends AppCompatActivity {
     private String who = "未登录";
-
+    private MySQLiteOpenHelper mMySQLiteOpenHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
-
+        mMySQLiteOpenHelper = new MySQLiteOpenHelper(this);
         SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
         boolean isLogin = spf.getBoolean("isLogin", false);
         boolean isAutoLogin = spf.getBoolean("isAutoLogin", false);
@@ -49,6 +50,12 @@ public class IndexActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView learn = findViewById(R.id.learn);
+        learn.setText("Learn\n" + mMySQLiteOpenHelper.getTotalWords(0));
+
+        TextView review = findViewById(R.id.review);
+        review.setText("Review\n" + mMySQLiteOpenHelper.getTotalWords(1));
     }
 
     @Override
@@ -59,12 +66,20 @@ public class IndexActivity extends AppCompatActivity {
     }
 
     public void learn(View view) {
+        if (mMySQLiteOpenHelper.getTotalWords(0) == 0) {
+            Toast.makeText(IndexActivity.this, "该词书没有需要学习的单词了！", Toast.LENGTH_LONG).show();
+            return;
+        }
         Intent intent = new Intent(IndexActivity.this, LearnActivity.class);
         intent.putExtra("account", who);
         startActivity(intent);
     }
 
     public void review(View view) {
+        if (mMySQLiteOpenHelper.getTotalWords(1) == 0) {
+            Toast.makeText(IndexActivity.this, "该词书没有需要复习的单词了！", Toast.LENGTH_LONG).show();
+            return;
+        }
         Intent intent = new Intent(IndexActivity.this, ReviewActivity.class);
         intent.putExtra("account", who);
         startActivity(intent);

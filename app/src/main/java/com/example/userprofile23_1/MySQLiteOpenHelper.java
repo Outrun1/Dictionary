@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.ImageView;
 
 
 import com.example.userprofile23_1.bean.Book;
@@ -16,7 +17,9 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 
@@ -357,38 +360,96 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return db.update(TABLE_NAME_Book, values, "id = ?", new String[]{String.valueOf(id)});
     }
 
-    public List<Book> queryFromDbByName(String name) {
-
+    public Map<String, String> queryWordsByBookId(Integer bookId, int learnOrReview) {
         SQLiteDatabase db = getWritableDatabase();
-        List<Book> bookList = new ArrayList<>();
+        String judge;
+        String[] columns;
+        if (learnOrReview == 0) {
+            judge = "book_id = ? and is_learn = ?";
+            columns = new String[] {String.valueOf(bookId), "0"};
+        } else {
+            judge = "book_id = ? and is_learn = ? and is_review = ?";
+            columns = new String[] {String.valueOf(bookId), "1", "0"};
+        }
+        Cursor cursor = db.query(TABLE_NAME_Words, null, judge, columns, null, null, null);
 
-
-        Cursor cursor = db.query(TABLE_NAME_Book, null, "name = ?", new String[]{name}, null, null, null);
-
+        Map<String, String> map = null;
         if (cursor != null) {
-
             while (cursor.moveToNext()) {
                 Integer id = cursor.getInt(cursor.getColumnIndex("id"));
-                String name1 = cursor.getString(cursor.getColumnIndex("name"));
-                Integer isSelected = cursor.getInt(cursor.getColumnIndex("is_selected"));
+                String word = cursor.getString(cursor.getColumnIndex("word"));
+                String translate = cursor.getString(cursor.getColumnIndex("translate"));
 
-                Book book = new Book();
-                book.setId(id);
-                book.setName(name1);
-                book.setIsSelected(isSelected);
-
-                bookList.add(book);
+                map = new HashMap<>();
+                map.put("id", String.valueOf(id));
+                map.put("word", word);
+                map.put("translate", translate);
+                break;
             }
-
             cursor.close();
-
         }
 
-        return bookList;
+        Integer tempId = Integer.valueOf(map.get("id"));
+        tempId = tempId > 4 ? tempId - 4 : tempId;
+        cursor = db.query(TABLE_NAME_Words, null, "id > ?", new String[]{String.valueOf(tempId)}, null, null, null);
 
+        int i = 1;
+        if (cursor != null) {
+            while (cursor.moveToNext() && i <= 3) {
+                String word = cursor.getString(cursor.getColumnIndex("word"));
+                String translate = cursor.getString(cursor.getColumnIndex("translate"));
+
+                map.put("word" + i, word);
+                map.put("translate" + i, translate);
+                i++;
+            }
+            cursor.close();
+        }
+        return map;
     }
 
+    public Integer queryTotalWordsByBookId(Integer bookId, int learnOrReview) {
+        SQLiteDatabase db = getWritableDatabase();
+        String judge;
+        String[] columns;
+        if (learnOrReview == 0) {
+            judge = "book_id = ? and is_learn = ?";
+            columns = new String[]{String.valueOf(bookId), "0"};
+        } else {
+            judge = "book_id = ? and is_learn = ? and is_review = ?";
+            columns = new String[]{String.valueOf(bookId), "1", "0"};
+        }
+        Cursor cursor = db.query(TABLE_NAME_Words, new String[]{"count(*)"}, judge, columns, null, null, null);
 
+        Map<String, String> map = null;
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                Integer total = cursor.getInt(cursor.getColumnIndex("count(*)"));
+                cursor.close();
+                return total;
+            }
+            cursor.close();
+        }
+        return null;
+    }
+
+    public Map<String, String> getWords(int learnOrReview) {
+        List<Book> books = queryAllFromDb();
+        for (Book book : books) {
+            if (book.getIsSelected() == 1)
+                return queryWordsByBookId(book.getId(), learnOrReview);
+        }
+        return null;
+    }
+
+    public Integer getTotalWords(int learnOrReview) {
+        List<Book> books = queryAllFromDb();
+        for (Book book : books) {
+            if (book.getIsSelected() == 1)
+                return queryTotalWordsByBookId(book.getId(), learnOrReview);
+        }
+        return null;
+    }
 
     public List<Book> queryAllFromDb() {
 
@@ -404,7 +465,6 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
                 Integer id = cursor.getInt(cursor.getColumnIndex("id"));
                 String name1 = cursor.getString(cursor.getColumnIndex("name"));
                 Integer isSelected = cursor.getInt(cursor.getColumnIndex("is_selected"));
-
 
                 Book book = new Book();
                 book.setId(id);

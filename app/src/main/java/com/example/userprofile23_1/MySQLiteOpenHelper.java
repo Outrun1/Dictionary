@@ -346,7 +346,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return db.delete(TABLE_NAME_Book, "name = ?", new String[]{name});
     }
 
-    public int updateData(String name) {
+    public int chooseBook(Integer id) {
 
         SQLiteDatabase db = getWritableDatabase();
 
@@ -354,7 +354,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         values.put("is_selected", 0);
         db.update(TABLE_NAME_Book, values, null, null);
         values.put("is_selected", 1);
-        return db.update(TABLE_NAME_Book, values, "name = ?", new String[]{name});
+        return db.update(TABLE_NAME_Book, values, "id = ?", new String[]{String.valueOf(id)});
     }
 
     public List<Book> queryFromDbByName(String name) {

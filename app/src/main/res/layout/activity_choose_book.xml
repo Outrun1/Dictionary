@@ -33,6 +33,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book1"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_selected_book" />
@@ -40,7 +41,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="character"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -50,6 +51,7 @@
                     android:background="@color/grey"></View>
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -57,6 +59,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book2"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -64,7 +67,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="culture"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -74,6 +77,7 @@
                     android:background="@color/grey"></View>
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -81,6 +85,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book3"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -88,7 +93,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="economics"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -107,6 +112,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -114,6 +120,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book4"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -121,7 +128,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="education"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -131,6 +138,7 @@
                     android:background="@color/grey"></View>
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -138,6 +146,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book5"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -145,7 +154,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="life"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -155,6 +164,7 @@
                     android:background="@color/grey"></View>
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -162,6 +172,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book6"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -169,7 +180,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="natural"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -188,6 +199,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -195,6 +207,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book7"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -202,7 +215,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="science"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -212,6 +225,7 @@
                     android:background="@color/grey"></View>
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -219,6 +233,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book8"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -226,7 +241,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="sport"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -236,6 +251,7 @@
                     android:background="@color/grey"></View>
 
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -243,6 +259,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/book9"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:background="@drawable/ic_baseline_book_24" />
@@ -250,7 +267,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BookName"
+                        android:text="other"
                         android:textSize="18sp" />
                 </LinearLayout>
 

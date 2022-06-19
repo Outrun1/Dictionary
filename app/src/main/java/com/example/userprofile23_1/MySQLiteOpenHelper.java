@@ -344,7 +344,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return db.insert(TABLE_NAME_Words, null, values);
     }
 
-    public int deleteFromDbByName(String name) {
+    private int deleteFromDbByName(String name) {
         SQLiteDatabase db = getWritableDatabase();
         return db.delete(TABLE_NAME_Book, "name = ?", new String[]{name});
     }
@@ -360,16 +360,18 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return db.update(TABLE_NAME_Book, values, "id = ?", new String[]{String.valueOf(id)});
     }
 
-    public Map<String, String> queryWordsByBookId(Integer bookId, int learnOrReview) {
+    private Map<String, String> queryWordsByBookId(Integer bookId, int learnOrReview, Integer idNotSelect) {
+        if (idNotSelect == null)
+            idNotSelect = 0;
         SQLiteDatabase db = getWritableDatabase();
         String judge;
         String[] columns;
         if (learnOrReview == 0) {
-            judge = "book_id = ? and is_learn = ?";
-            columns = new String[] {String.valueOf(bookId), "0"};
+            judge = "book_id = ? and is_learn = ? and id > ?";
+            columns = new String[] {String.valueOf(bookId), "0", String.valueOf(idNotSelect)};
         } else {
-            judge = "book_id = ? and is_learn = ? and is_review = ?";
-            columns = new String[] {String.valueOf(bookId), "1", "0"};
+            judge = "book_id = ? and is_learn = ? and is_review = ? and id > ?";
+            columns = new String[] {String.valueOf(bookId), "1", "0", String.valueOf(idNotSelect)};
         }
         Cursor cursor = db.query(TABLE_NAME_Words, null, judge, columns, null, null, null);
 
@@ -408,7 +410,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return map;
     }
 
-    public Integer queryTotalWordsByBookId(Integer bookId, int learnOrReview) {
+    private Integer queryTotalWordsByBookId(Integer bookId, int learnOrReview) {
         SQLiteDatabase db = getWritableDatabase();
         String judge;
         String[] columns;
@@ -433,11 +435,11 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return null;
     }
 
-    public Map<String, String> getWords(int learnOrReview) {
+    public Map<String, String> getWords(int learnOrReview, Integer id) {
         List<Book> books = queryAllFromDb();
         for (Book book : books) {
             if (book.getIsSelected() == 1)
-                return queryWordsByBookId(book.getId(), learnOrReview);
+                return queryWordsByBookId(book.getId(), learnOrReview, id);
         }
         return null;
     }
@@ -451,12 +453,26 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    public int setLearn(String id) {
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put("is_learn", 1);
+        return db.update(TABLE_NAME_Words, values, "id = ?", new String[]{id});
+    }
+
+    public int setReview(String id) {
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put("is_review", 1);
+        return db.update(TABLE_NAME_Words, values, "id = ?", new String[]{id});
+    }
+
     public List<Book> queryAllFromDb() {
 
         SQLiteDatabase db = getWritableDatabase();
         List<Book> bookList = new ArrayList<>();
-
-
         Cursor cursor = db.query(TABLE_NAME_Book, null, null, null, null, null, null);
 
         if (cursor != null) {

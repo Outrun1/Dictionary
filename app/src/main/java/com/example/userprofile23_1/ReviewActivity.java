@@ -35,7 +35,7 @@ public class ReviewActivity extends AppCompatActivity {
         translate2 = findViewById(R.id.translate2);
         translate3 = findViewById(R.id.translate3);
         translate4 = findViewById(R.id.translate4);
-        Map<String, String> words = mMySQLiteOpenHelper.getWords(1);
+        Map<String, String> words = mMySQLiteOpenHelper.getWords(1, null);
         word.setText(words.get("word"));
         translate1.setText(words.get("translate"));
         translate2.setText(words.get("translate1"));

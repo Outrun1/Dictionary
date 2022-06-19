@@ -222,6 +222,10 @@ public class LearnActivity extends AppCompatActivity {
             else
                 imageView4.setBackground(getDrawable(R.drawable.ic_baseline_clear_gray));
         }
+        translate1.setText(words.get("word") + "\n" + words.get("translate"));
+        translate2.setText(words.get("word1") + "\n" + words.get("translate1"));
+        translate3.setText(words.get("word2") + "\n" + words.get("translate2"));
+        translate4.setText(words.get("word3") + "\n" + words.get("translate3"));
     }
 
     public void back(View view) {

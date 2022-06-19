@@ -8,11 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.userprofile23_1.bean.Words;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CollectActivity extends AppCompatActivity {

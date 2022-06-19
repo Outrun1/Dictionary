@@ -75,7 +75,7 @@
             android:shadowRadius="3.0"
             android:text="Translate"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="italic"></TextView>
     </LinearLayout>
     <LinearLayout
@@ -107,7 +107,7 @@
             android:shadowRadius="3.0"
             android:text="Translate"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="italic"
 
             ></TextView>
@@ -141,7 +141,7 @@
             android:shadowRadius="3.0"
             android:text="Translate"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="italic"></TextView>
     </LinearLayout>
     <LinearLayout
@@ -173,7 +173,7 @@
             android:shadowRadius="3.0"
             android:text="Translate"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="italic"
             ></TextView>
     </LinearLayout>

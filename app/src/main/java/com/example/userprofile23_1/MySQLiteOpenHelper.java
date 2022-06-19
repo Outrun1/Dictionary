@@ -381,11 +381,12 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
                 Integer id = cursor.getInt(cursor.getColumnIndex("id"));
                 String word = cursor.getString(cursor.getColumnIndex("word"));
                 String translate = cursor.getString(cursor.getColumnIndex("translate"));
-
+                Integer isCollect = cursor.getInt(cursor.getColumnIndex("is_collect"));
                 map = new HashMap<>();
                 map.put("id", String.valueOf(id));
                 map.put("word", word);
                 map.put("translate", translate);
+                map.put("isCollect", String.valueOf(isCollect));
                 break;
             }
             cursor.close();
@@ -466,6 +467,15 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put("is_review", 1);
+        return db.update(TABLE_NAME_Words, values, "id = ?", new String[]{id});
+    }
+
+    public int setCollect(String id, String isCollect) {
+
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put("is_collect", isCollect.equals("0") ? "1" : "0");
         return db.update(TABLE_NAME_Words, values, "id = ?", new String[]{id});
     }
 

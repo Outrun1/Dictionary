@@ -80,8 +80,12 @@ public class ReviewActivity extends AppCompatActivity {
         translate4.setText(words.get("translate3"));
 
         collect = findViewById(R.id.collect);
-
+        if (words.get("isCollect").equals("0"))
+            collect.setBackground(getDrawable(R.drawable.ic_baseline_star_gray));
+        else
+            collect.setBackground(getDrawable(R.drawable.ic_baseline_star_green));
     }
+
 
     @SuppressLint("NewApi")
     void initEvent() {
@@ -132,7 +136,13 @@ public class ReviewActivity extends AppCompatActivity {
         collect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                String isCollect = words.get("isCollect");
+                mMySQLiteOpenHelper.setCollect(words.get("id"), isCollect);
+                words.put("isCollect", isCollect.equals("0") ? "1" : "0");
+                if (words.get("isCollect").equals("0"))
+                    collect.setBackground(getDrawable(R.drawable.ic_baseline_star_gray));
+                else
+                    collect.setBackground(getDrawable(R.drawable.ic_baseline_star_green));
             }
         });
 

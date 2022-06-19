@@ -1,0 +1,119 @@
+ace 网球赛中的一分
+amateur 业余运动员，爱好者
+backstroke 仰式
+baseball 棒球
+belt 段带
+boat race 赛艇
+boxing weights 拳击体重级别
+boxing 拳击
+breaststroke 蛙式
+butterfly 蝶泳
+canoe 划艇
+championship 冠军赛，锦标赛
+changing room 更衣室
+chase 追逐赛
+competitor 运动员
+court 网球场
+crawl 爬泳
+cricket 板球
+cross-country race 越野跑
+cycling stadium 自行车赛车场
+decathlon 十项
+deuce 局末平分, 盘末平局
+discus 铁饼
+diving competition 跳水
+fan 迷，爱好者
+fencing 击剑
+fifteen all 一平（网球比赛用词）
+figure skating 花样滑冰
+forty all 三平（网球比赛用词）
+freestyle 自由式
+game 局
+golf 高尔夫球
+grass court 草地网球场
+Greece-Roman wrestling 古典式摔跤
+ground 场地
+guide 领队
+gymnastics 体操
+handball 手球
+heavyweight 最重量级
+helmet 头盔
+high jump 跳高
+hockey 曲棍球
+ice hockey 冰球
+ice skating 滑冰
+the mixed doubles 混合双打
+instructor 教练，技术指导
+javelin 标枪
+judo 柔道
+judoka 柔道运动员
+jump 跳跃
+jumping 跳跃运动
+kayak 皮船
+kick-off 开球
+lawn tennis 草地网球运动
+light flyweight 次特轻量级
+long jump 跳远
+long-distance runner 长跑运动员
+love game 一方得零分的一局
+manager 经纪人
+marathon 马拉松
+medley relay 混合泳
+men’s singles 单打运动员
+middle-distance race 中长跑
+middleweight 次重量级
+Olympic Games 奥林匹克运动会
+outsider 无取胜希望者
+pole vault 撑竿跳
+professional 职业运动员
+race 计时赛；跑
+racing car 赛车
+racket 球拍
+rally 汽车拉力赛
+rank 段
+record 纪录
+record holder 纪录创造者
+red card 红牌（表示判罚出场）
+referee裁判
+riding 骑马
+ring 圈
+road race 公路赛
+rowing 划船
+rugby 橄榄球
+sailing 帆船运动
+set 盘
+shot put 推铅球
+ski 滑雪板
+skiing 滑雪
+softball 垒球
+spot kick 罚点球
+sprint 短跑
+stadium 运动场
+surfboard 冲浪板
+surfing 冲浪
+swimming 游泳
+swimming pool 游泳池
+taekwondo 跆拳道
+team 队
+tennis 网球
+the 400 metre hurdles 400米栏
+thirty all 二平（网球比赛用词）
+throw 投掷
+throwing 投掷运动
+timekeeper 计时员
+to shoot 射门
+track 跑道
+trainer 助理教练
+triple jump 三级跳
+volleyball 排球
+walk 竞走
+water polo 水球
+water skiing 水橇
+weight-lifting 举重
+weights 重量级
+winner 胜利者
+Winter Olympics 冬季奥林匹克运动会
+winter sports 冬季运动
+wrestler 摔跤运动员
+yacht 游艇
+yellow card 黄牌（表示警告）

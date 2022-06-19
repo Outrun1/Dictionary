@@ -4,19 +4,25 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.userprofile23_1.bean.Book;
+
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvContent;
+    private EditText tvContent;
+    private MySQLiteOpenHelper mMySQLiteOpenHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tvContent = findViewById(R.id.tv_content);
+        mMySQLiteOpenHelper = new MySQLiteOpenHelper(this);
 
         Intent intent = getIntent();
         String account;
@@ -24,18 +30,19 @@ public class MainActivity extends AppCompatActivity {
             account = intent.getStringExtra("account");
         else
             account = "未登录";
-        tvContent.setText("欢迎你："+account);
 
     }
 
     public void logout(View view) {
-        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
-        SharedPreferences.Editor edit = spf.edit();
-        edit.putBoolean("isLogin", false);
-        edit.apply();
+//        String name = tvContent.getText().toString().trim();
+//
+//        Book book = new Book();
+//        book.setName(name);
+//        book.setIsSelected(0);
+//
+//        // 插入数据库中
+//        mMySQLiteOpenHelper.insertBook(book);
 
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-        this.finish();
+        mMySQLiteOpenHelper.initData(getResources());
     }
 }

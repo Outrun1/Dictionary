@@ -1,0 +1,42 @@
+furnished 已装修的
+crack 裂缝
+unfurnished 未装修的
+install 安装
+baby crib 婴儿床
+maintenance 维修
+decoration 装饰
+plumber 管道工人
+multiple glazing 多层玻璃
+washing machine 洗衣机
+cupboard 碗柜，食橱
+refrigerator 电冰箱
+sideboard 边柜
+light bulb 电灯泡
+sink 洗涤槽
+heater 加热器
+pipe 管道
+furnace 暖气锅炉；熔炉
+leak 漏水
+ventilation 通风
+tenant 房客
+accommodate 供给住处
+apartment 公寓
+dwell 居住
+residence 居住，住所
+downtown 市中心
+hallway 走廊，过道
+suburb 郊区
+spare room 空余房间
+neighbour-hood 社区，街坊
+burglar 小偷，窃贼
+transportation 交通
+house-warming party 乔迁宴会
+subway entrance 地铁入口
+recycled water再生水
+renewable energy可再生能源
+sewage treatment污水治理
+recyclable 可回收的
+deforestation rate森林砍伐率
+water and soil erosion水土流失
+temperature 温度
+muggy 闷热潮湿的

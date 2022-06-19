@@ -1,0 +1,232 @@
+accumulated deficit 累计赤字
+across-the-board tariff cut talks 全面削减关税会谈
+active trade balance 贸易顺差
+adverse trade balance 贸易逆差
+African Development Bank 非洲开发银行
+aid 援助
+allocation of funds 资金分配
+allotment 拨款
+allowance 补贴，补助金，津贴
+American Selling Price 美国销售价格
+amortization 摊销，摊还，分期偿付
+annuity 年金
+article 物品，商品
+assigned 过户
+autarchy 闭关自守
+available capital 可用资产
+average income 平均收入
+balance of trade 交易平衡
+bank 银行
+banknote 钞票，纸币
+bear 卖空者，空头
+bearer cheque无记名支票
+bond债券
+borrower 借方，借款人
+borrowing 借款
+break 暴跌
+broker 经济人
+buffer fund 缓冲基金，平准基金
+bull 买空者，多头
+business recession 经济衰退
+business slump 生意萧条
+by-product 副产品
+capital flight 资本外逃
+capital goods 资本货物
+capitalist economy 资本主义经济
+cartel 卡特尔
+cash 现金
+cash dividend 现金配股
+cash transaction 现金交易
+change 零钱
+cheque 支票
+chequebook 支票簿，支票本
+circulating capital 流动资本
+closing price 收盘
+collective economy 集体经济
+Committee of Twenty 二十国委员会
+concentration 集中
+consolidated debt 合并债务
+consumer goods 消费品
+controlled economy 管制经济
+convertibility 可兑换性
+convertible currencies 可自由兑换货币
+cost 成本，费用
+creditor 债权人
+crossed cheque 划线支票
+current account 经常账户
+current-account holder 支票账户
+debtor 债务人，借方
+deficiency 亏损
+deflation 通货紧缩
+demand and supply balance 供求平衡
+depreciation 减价，贬值
+devaluation (货币)贬值
+developing 发展中的
+discount 贴现，折扣
+dividend 股息，红利
+doldrums 经济停滞
+domestic currency 本国货币
+drawing 提款，提存
+dull 盘整
+dull market 萧条的市场
+duty 税
+earnings 利润，收益
+ease 松弛
+Economic and Social Council 联合国经济及社会理事会
+economic balance 经济平衡
+economic channels 经济渠道
+Economic Commission for Africa 非洲经济委员会
+Economic Commission for Europe 欧洲经济委员会
+economic depression 经济衰退
+economic fluctuation 经济波动
+economic policy 经济政策
+economic recession 经济衰退
+economic recovery 经济复原
+economic sanction 财经制裁
+economic situation 经济形势
+economic stability 经济稳定
+economic takeoff 经济起飞
+economic trend 经济趋势
+economist 经济学家
+endorsement 背书；批注
+Eurogroup 欧洲集团
+European Economic Community 欧洲经济共同体
+exchange rate汇率，兑换率
+excise tax 特许权税
+expenditure 开支，支出
+fiscal year 财政年度
+fixed assets 固定资产
+fixed costs 固定成本
+floating debt 流动债务
+floating exchange rate 浮动汇率
+Food and Agricultural Organization 粮食与农业组织
+foreign exchange 外汇
+free exchange rates 自由汇兑市场
+frozen assets 冻结资产
+frozen capital 冻结资金
+funded debt 固定债务，长期债务
+gold reserve 黄金储备
+gold standard 金本位
+gross income 总收入，总收益
+Group of Ten 十国集团
+hard currency 硬通货
+hard times 低潮
+holding company 控股公司
+income gain 股利收入
+income tax 所得税
+income 收入，收益
+increase in value 增值，升值
+infrastructure 基本建设
+initial capital 创办资本
+input 投入
+insurance 保险 
+interest 利息
+International Finance Corporation 国际金融公司
+International Monetary Found 国际货币基金组织
+investment trust 投资信托
+investment 投资，资产
+investor 投资人
+issue 发行股票
+land tax 地租，地价税
+lender 债权人
+liberal economy 自由经济
+London Stock Market 伦敦股票市场
+long term loan 长期贷款
+manufactured goods 制成品，产成品
+maturity 到期日，偿还日
+medium term loan 中期贷款
+mixed economy 混合经济
+money 货币
+mortgage 抵押
+National city Bank of New York 花旗银行
+national income 国民收入
+net income 纯收益，净收入，收益净额
+New York Stock Exchange 纽约证券交易所
+opening price 开盘
+operating costs 生产费用，营业成本
+operating expenses 营业费用
+Organization for Economic cooperation and Development 经济合作与开发组织
+Organization of the Petroleum Exporting Countries 石油输出国组织
+output 产出，产量
+overhead costs 营业间接成本
+overheads 杂项开支，间接成本
+overproduction 生产过剩
+par value 股面价格，票面价格
+petrodollar 石油美元
+planned economy 计划经济
+political economy 政治经济学
+preference stock 优先股
+price index 物价指数
+price-curbing policy 抑制物价政策
+primary sector 初级成分
+private sector 私营成分，私营部门
+producer 生产者，制造者
+productive 生产的
+productiveness 赢利性
+productivity 生产率 
+switch trade 转手交易
+tax exemption 免税
+taxation 征税，纳税
+taxation system 税制
+tax-free 免税的
+taxpayer 纳税人
+to pay cash 付现金
+transfer 转让，转账，过户
+transport costs 运输费用
+traveler’s cheque 旅行支票
+trust 托拉斯
+tycoon 巨头
+underdeveloped 不发达的
+understanding 约定
+United Bank of Switzerland 瑞士联合银行
+United Nations Capital Development Fund 联合国资本开发基金
+United Nations Conference on Trade and Development 联合国贸易与发展会议
+United Nations Development Program 联合国开发计划署
+value added tax 增值税
+Wall Street 华尔街
+wholesale dealer 批发商
+World Bank 世界银行
+yield 产量收益，收益率products 产品
+profitability 利润率，赢利率
+protectionism 保护主义
+public sector 公共部门，公共成分
+purchasing power 购买力
+quotation 报价，牌价
+raising limit 涨停板
+rate of growth 增长
+rate of interest 利率
+raw material 原料
+raw product 初级产品
+ready money business 现金交易，概不赊欠
+ready money 现钱
+real estate 不动产，房地产
+reciprocal trade agreement 互惠贸易政策
+redemption 偿还
+rediscount 再贴现
+reserve 预备金，储备金
+retailer 零售商
+revaluation 重估价
+runaway inflation 无法控制的通货膨胀
+rural economics 农村经济
+saving 储装，存款
+scarcity 短缺
+securities business 证券市场
+securities 有价证券
+self-financing 自筹经费
+semifinished goods 半成品
+share 普通股
+share 股份，股票
+shareholder 股东
+short term credit 短期信贷
+short term loan 短期贷款
+social charges 社会负担费用
+socialist economy 社会主义经济
+speculation 投机
+stagnation 停滞，萧条，不景气
+standard of living 生活标准
+stock company 证券公司
+stock exchange corporation 证券交易所
+stock exchange 股票市场
+stock investment 股票投资
+stock-jobber 股票经纪人
+supply 供给，补给 

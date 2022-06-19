@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UserProfile23_1">
         <activity
+            android:name=".ChooseBookActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReviewActivity"
             android:exported="false" />
         <activity
@@ -30,11 +33,7 @@
         <activity
             android:name=".IndexActivity"
             android:label="首页">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".EditProfileActivity"
@@ -47,7 +46,13 @@
             android:label="登录" />
         <activity
             android:name=".MainActivity"
-            android:label="首页" />
+            android:label="首页" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".RegisterActivity"
             android:label="注册" />

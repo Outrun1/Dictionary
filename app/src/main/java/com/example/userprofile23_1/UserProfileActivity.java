@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class UserProfileActivity extends AppCompatActivity {
 
-    private TextView tvNickName,tvAccount,tvGender,tvCity,tvHome,tvSchool;
+    private TextView tvNickName,tvAccount,tvGender,tvCity,tvSchool;
     private String who = "未登录";
 
     private ImageView ivAvatar;
@@ -39,10 +39,10 @@ public class UserProfileActivity extends AppCompatActivity {
             tvAccount.setText("未登录");
             tvGender.setText("");
             tvCity.setText("未登录");
-            tvHome.setText("未登录");
             tvSchool.setText("未登录");
             findViewById(R.id.myCollect).setVisibility(View.INVISIBLE);
             findViewById(R.id.myTranslate).setVisibility(View.INVISIBLE);
+            findViewById(R.id.myBook).setVisibility(View.INVISIBLE);
         }
         LinearLayout index = findViewById(R.id.index);
         index.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +81,6 @@ public class UserProfileActivity extends AppCompatActivity {
 
         tvAccount.setText(account);
         tvNickName.setText(nickName);
-        tvHome.setText(city);
         tvSchool.setText(school);
         tvGender.setText(gender);
         tvCity.setText(city);
@@ -93,7 +92,7 @@ public class UserProfileActivity extends AppCompatActivity {
     private void initView() {
         tvAccount = findViewById(R.id.tv_account_text);
         tvNickName = findViewById(R.id.tv_nick_name);
-        tvHome = findViewById(R.id.tv_home_text);
+
         tvSchool = findViewById(R.id.tv_school_text);
         tvGender = findViewById(R.id.tv_gender);
         tvCity = findViewById(R.id.tv_city);
@@ -109,6 +108,12 @@ public class UserProfileActivity extends AppCompatActivity {
 
     public void toEdit(View view) {
         Intent intent = new Intent(this, EditProfileActivity.class);
+        intent.putExtra("account", who);
+        startActivity(intent);
+    }
+
+    public void toChooseBook(View view) {
+        Intent intent = new Intent(this, ChooseBookActivity.class);
         intent.putExtra("account", who);
         startActivity(intent);
     }

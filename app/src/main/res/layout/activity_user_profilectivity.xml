@@ -108,33 +108,6 @@
                 android:textSize="20sp" />
         </RelativeLayout>
 
-        =
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="10dp">
-
-            <TextView
-                android:id="@+id/tv_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="城市"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/tv_home_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:text="深圳"
-                android:textSize="20sp" />
-        </RelativeLayout>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -174,6 +147,13 @@
             android:layout_margin="5dp"
             android:onClick="toEdit"
             android:text="编辑资料" />
+        <Button
+            android:id="@+id/myBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="toChooseBook"
+            android:text="选择词书" />
 
         <Button
             android:id="@+id/logout"

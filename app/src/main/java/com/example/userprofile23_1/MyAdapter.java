@@ -7,14 +7,16 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.userprofile23_1.bean.Words;
+
 import java.util.List;
 
 public class MyAdapter extends BaseAdapter {
 
-    private List<Bean> data;
+    private List<Words> data;
     private Context context;
 
-    public MyAdapter(List<Bean> data, Context context) {
+    public MyAdapter(List<Words> data, Context context) {
         this.data = data;
         this.context = context;
     }
@@ -41,8 +43,7 @@ public class MyAdapter extends BaseAdapter {
         }
 
         TextView textView = view.findViewById(R.id.collect_item);
-        textView.setText(data.get(i).getName());
-
+        textView.setText(data.get(i).getWord() + "\n" + data.get(i).getTranslate());
         return view;
     }
 }

@@ -454,6 +454,28 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    public List<Words> getCollectWords() {
+        SQLiteDatabase db = getWritableDatabase();
+        Cursor cursor = db.query(TABLE_NAME_Words, null, "is_collect = ?", new String[]{"1"}, null, null, null);
+
+        List<Words> wordsList = new ArrayList<>();
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                Integer id = cursor.getInt(cursor.getColumnIndex("id"));
+                String word = cursor.getString(cursor.getColumnIndex("word"));
+                String translate = cursor.getString(cursor.getColumnIndex("translate"));
+
+                Words words = new Words();
+                words.setId(id);
+                words.setWord(word);
+                words.setTranslate(translate);
+                wordsList.add(words);
+            }
+            cursor.close();
+        }
+        return wordsList;
+    }
+
     public int setLearn(String id) {
         SQLiteDatabase db = getWritableDatabase();
 
